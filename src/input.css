@@ -1,0 +1,11 @@
+/* Importe Tailwind : reset, thème par défaut et classes utilitaires. */
+@import "tailwindcss";
+
+/* Thème Roussel : chaque variable crée ses classes (bg-roussel-vert, text-roussel-rose...). */
+@theme {
+  --color-roussel-vert: #2f5d3a;
+  --color-roussel-vert-clair: #e7f0e9;
+  --color-roussel-rose: #b0305c;
+  --color-roussel-texte: #1f2421;
+  --color-roussel-gris: #555c57;
+}
