@@ -25,10 +25,30 @@
   </header>
 
   <main id="contenu" class="mx-auto max-w-5xl px-4 py-8">
+      <h1 class="text-2xl font-bold text-center mb-6 text-zinc-800">Quelle fleur êtes-vous ?</h1>
 
-    <!-- L'application vient ici. -->
+      <form id="quiz-form" class="space-y-6">
+        <div id="questions-container" class="space-y-6">
+          <!-- Chargé dynamiquement depuis questions.json -->
+        </div>
 
-  </main>
+        <div id="error-message" class="text-red-600 text-sm font-medium min-h-[1.25rem]" aria-live="polite"></div>
+
+        <button type="submit" id="submit-btn" class="w-full bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer">
+          Découvrir mon profil
+        </button>
+      </form>
+
+      <section id="result-container" class="hidden mt-6 p-6 bg-emerald-50 border border-emerald-200 rounded-lg space-y-3" aria-live="polite">
+        <!-- Résultat injecté ici -->
+      </section>
+
+      <button id="reset-btn" class="hidden w-full mt-4 bg-zinc-200 text-zinc-800 font-medium py-3 px-4 rounded-lg hover:bg-zinc-300 transition-colors cursor-pointer">
+        Recommencer
+      </button>
+    </main>
+
+    <script src="js/app.js"></script>
 
   <!-- Pied de page commun du site -->
   <footer class="mt-12 bg-roussel-vert-clair">

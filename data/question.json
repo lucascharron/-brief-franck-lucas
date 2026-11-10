@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "texte": "Votre samedi idéal ?",
+      "options": [
+        { "texte": "Un pique-nique au soleil avec des amis", "fleur": "tournesol" },
+        { "texte": "Une balade tranquille dans la nature", "fleur": "lavande" },
+        { "texte": "Un grand repas de famille", "fleur": "pivoine" },
+        { "texte": "Un musée, puis un restaurant raffiné", "fleur": "orchidee" }
+      ]
+    },
+    {
+      "id": "q2",
+      "texte": "Votre couleur préférée ?",
+      "options": [
+        { "texte": "Jaune", "fleur": "tournesol" },
+        { "texte": "Mauve", "fleur": "lavande" },
+        { "texte": "Rose", "fleur": "pivoine" },
+        { "texte": "Blanc", "fleur": "orchidee" }
+      ]
+    },
+    {
+      "id": "q3",
+      "texte": "On vous décrit souvent comme…",
+      "options": [
+        { "texte": "Joyeux", "fleur": "tournesol" },
+        { "texte": "Calme", "fleur": "lavande" },
+        { "texte": "Généreux", "fleur": "pivoine" },
+        { "texte": "Élégant", "fleur": "orchidee" }
+      ]
+    },
+    {
+      "id": "q4",
+      "texte": "Votre boisson ?",
+      "options": [
+        { "texte": "Une citronnade", "fleur": "tournesol" },
+        { "texte": "Une tisane", "fleur": "lavande" },
+        { "texte": "Un chocolat chaud", "fleur": "pivoine" },
+        { "texte": "Un thé blanc", "fleur": "orchidee" }
+      ]
+    },
+    {
+      "id": "q5",
+      "texte": "En vacances, vous choisissez…",
+      "options": [
+        { "texte": "La plage", "fleur": "tournesol" },
+        { "texte": "La Provence", "fleur": "lavande" },
+        { "texte": "Une maison pleine de monde", "fleur": "pivoine" },
+        { "texte": "Une capitale étrangère", "fleur": "orchidee" }
+      ]
+    }
+  ]
+}
