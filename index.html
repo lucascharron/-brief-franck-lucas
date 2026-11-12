@@ -27,16 +27,34 @@
   <main id="contenu" class="mx-auto max-w-5xl px-4 py-8">
       <h1 class="text-2xl font-bold text-center mb-6 text-zinc-800">Quelle fleur êtes-vous ?</h1>
 
-      <form id="quiz-form" class="space-y-6">
+      <form id="quiz-form" class="space-y-6" novalidate>
+        <!-- Barre de progression -->
+        <div id="progress" class="hidden space-y-2">
+          <p id="progress-label" class="text-sm font-medium text-roussel-gris"></p>
+          <div class="h-2 w-full overflow-hidden rounded-full bg-roussel-vert-clair"
+               role="progressbar" aria-label="Progression du quiz"
+               aria-valuemin="0" aria-valuemax="5" aria-valuenow="1" id="progress-bar">
+            <div id="progress-fill" class="h-full rounded-full bg-emerald-600 transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
         <div id="questions-container" class="space-y-6">
-          <!-- Chargé dynamiquement depuis data/question.json -->
+          <!-- Chargé dynamiquement depuis data/question.json, une question visible à la fois -->
         </div>
 
         <div id="error-message" class="text-red-600 text-sm font-medium min-h-[1.25rem]" aria-live="polite"></div>
 
-        <button type="submit" id="submit-btn" class="w-full bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer">
-          Découvrir mon profil
-        </button>
+        <div class="flex gap-3">
+          <button type="button" id="prev-btn" class="hidden flex-1 bg-zinc-200 text-zinc-800 font-medium py-3 px-4 rounded-lg hover:bg-zinc-300 transition-colors cursor-pointer">
+            Précédent
+          </button>
+          <button type="button" id="next-btn" class="hidden flex-1 bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer">
+            Suivant
+          </button>
+          <button type="submit" id="submit-btn" class="hidden flex-1 bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer">
+            Découvrir mon profil
+          </button>
+        </div>
       </form>
 
       <section id="result-container" class="hidden mt-6 p-6 bg-emerald-50 border border-emerald-200 rounded-lg space-y-3" aria-live="polite">

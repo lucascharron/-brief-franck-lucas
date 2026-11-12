@@ -42,3 +42,15 @@
 - **Erreur :** « Conseil : null » possible. **Corrigé :** conseil affiché seulement s'il existe.
 - **Erreur :** données injectées via `innerHTML`. **Corrigé :** construction du DOM avec `textContent`.
 - **Erreur :** « Recommencer » rechargeait la page. **Corrigé :** réinitialisation du formulaire, résultat masqué.
+
+## Ajout manuel — conseil d'entretien de l'orchidée
+- **Contexte :** le texte de Madame Roussel ne donne aucun entretien pour l'orchidée (`conseil: null` attendu en sortie du prompt).
+- **Modification :** à la demande de l'équipe, conseil rédigé manuellement dans `data/donnees.json` : « Placez-la à la lumière, sans soleil direct, et changez l'eau du vase tous les deux jours. »
+- **Traçabilité :** `"conseil"` ajouté dans `a_verifier` de l'orchidée, car ce contenu ne vient pas du texte source et doit être validé par Madame Roussel.
+
+## Bonus du sujet (code)
+- **Une question à la fois + barre de progression :** boutons Précédent / Suivant, « Question X sur 5 », barre accessible (`role="progressbar"`). « Suivant » refuse d'avancer sans réponse et l'indique ; à la validation, s'il manque une réponse, le quiz revient sur la question concernée.
+- **Réponses par fleur :** sous le résultat, nombre de réponses obtenues par chaque fleur, dans l'ordre de `donnees.json`, fleur gagnante en gras.
+- **Lien bouquets :** « Voir nos bouquets de [fleur] » vers `bouquets.html?fleur=<id>` (élision gérée : « d'orchidée »).
+- **Point ouvert :** `bouquets.html` n'existe pas encore dans le projet (le lien du menu pointe aussi dessus).
+- **Illustration du résultat :** image `img/fleurs/<id>.svg` affichée à côté du nom (chemin déduit de l'id, car `schema-quiz.json` interdit toute clé supplémentaire). Image masquée si le fichier n'existe pas. **Point ouvert :** pas de `orchidee.svg` dans `img/fleurs/`.
