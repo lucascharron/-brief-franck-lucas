@@ -1,0 +1,55 @@
+```javascript
+function afficherResultat(profile, counts) {
+  const container = document.getElementById('result-container');
+  if (!container) return;
+
+  // Utilitaire : crée un élément avec du texte (textContent évite toute injection HTML)
+  const el = (tag, text, className) => {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+
+  container.replaceChildren();
+
+  // Portrait de la fleur gagnante
+  const portrait = el('article', undefined, 'portrait');
+  portrait.append(
+    el('h2', profile.nom),
+    el('p', profile.titre, 'portrait-titre'),
+    el('p', profile.description, 'portrait-description')
+  );
+
+  // Le conseil est optionnel (null pour l'orchidée) : on n'affiche rien s'il manque
+  if (profile.conseil) {
+    const conseil = el('p', undefined, 'portrait-conseil');
+    conseil.append(el('strong', "Conseil d'entretien : "), document.createTextNode(profile.conseil));
+    portrait.append(conseil);
+  }
+
+  // Décompte des réponses pour chaque fleur
+  const scores = el('section', undefined, 'scores');
+  scores.append(el('h3', 'Vos réponses par fleur'));
+
+  const liste = el('ul');
+  const fleurs = Array.isArray(portraits) ? portraits : [];
+  fleurs.forEach((fleur) => {
+    const n = (counts && counts[fleur.id]) || 0;
+    const li = el('li', `${fleur.nom} : ${n} réponse${n > 1 ? 's' : ''}`);
+    if (fleur.id === profile.id) li.classList.add('gagnante');
+    liste.append(li);
+  });
+  scores.append(liste);
+
+  container.append(portrait, scores);
+}
+```
+
+Points à noter :
+
+- **Conseil nul** : l'orchidée a `conseil: null`, donc le paragraphe n'est affiché que s'il existe (pas de « null » à l'écran).
+- **Sécurité** : tout passe par `textContent`, jamais `innerHTML`, donc les données ne peuvent pas injecter de HTML.
+- **Décompte** : on parcourt `portraits`, donc une fleur absente de `counts` s'affiche avec 0 réponse. Le pluriel est géré (« 0 réponse », « 1 réponse », « 2 réponses »).
+- **Style** : la fleur gagnante reçoit la classe `gagnante` dans la liste, pour la mettre en valeur en CSS si besoin.
+- Le champ `a_verifier` n'est volontairement pas affiché, car il s'agit d'une donnée interne.

@@ -1,0 +1,29 @@
+```json
+{
+  "quiz": {
+    "theme": "Les fleurs",
+    "auteur": "Madame Roussel",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Tu aimes cette fleur, tu es créatif(ve) et tu as plein d'idées. De quelle fleur s'agit-il ?",
+        "choix": ["L'iris", "La rose", "Le tournesol", "La tulipe"],
+        "bonne_reponse": "L'iris"
+      },
+      {
+        "id": 2,
+        "question": "Pour l'entretien de l'iris, quelle quantité d'eau faut-il mettre dans le vase ?",
+        "choix": [
+          "Peu d'eau",
+          "Beaucoup d'eau",
+          "Le vase rempli à ras bord",
+          "Pas d'eau du tout"
+        ],
+        "bonne_reponse": "Peu d'eau"
+      }
+    ]
+  }
+}
+```
+
+Le texte de Mme Roussel ne contient que les bonnes réponses, pas les autres choix. J'ai donc inventé les mauvaises réponses (« La rose », « Le tournesol », « La tulipe », « Beaucoup d'eau », etc.). Si elle a ses propres propositions, il suffit de les remplacer dans les tableaux `choix`.

@@ -1,0 +1,18 @@
+```json
+{
+  "quiz": [
+    {
+      "question": "Quelle fleur est considérée comme un porte-bonheur le 1er mai ?",
+      "choix": [
+        "Le muguet",
+        "La rose",
+        "La tulipe",
+        "La marguerite"
+      ],
+      "bonne_reponse": "Le muguet"
+    }
+  ]
+}
+```
+
+Le texte de Madame Roussel ne contient qu'une seule information (« Le muguet : porte-bonheur du 1er mai »), donc le JSON ne comporte qu'une question. Les trois mauvais choix (rose, tulipe, marguerite) sont des distracteurs que j'ai ajoutés, car ils ne figuraient pas dans les données. Si tu m'envoies d'autres fleurs, j'ajouterai les questions correspondantes.

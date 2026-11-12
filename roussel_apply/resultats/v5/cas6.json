@@ -1,0 +1,18 @@
+[
+  {
+    "id": "jasmin",
+    "nom": "Jasmin",
+    "titre": "Douceur et sensualité",
+    "description": "Le jasmin est douceur et sensualité. Si vous le choisissez, vous choisissez la douceur et la sensualité.",
+    "conseil": null,
+    "a_verifier": []
+  },
+  {
+    "id": "cactus-fleuri",
+    "nom": "Cactus fleuri",
+    "titre": "Résistance et patience",
+    "description": "Le cactus fleuri est résistance et patience, il ne demande presque rien. Si vous le choisissez, vous choisissez la résistance et la patience.",
+    "conseil": "Arrosez-le une fois par mois.",
+    "a_verifier": []
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "cas1": {
+    "texte": "roussel_apply/cas/cas1.txt",
+    "piege": "Fleur hors du quiz",
+    "fleurs": ["coquelicot"],
+    "conseilNull": []
+  },
+  "cas2": {
+    "texte": "roussel_apply/cas/cas2.txt",
+    "piege": "Texte en anglais",
+    "fleurs": ["marguerite"],
+    "conseilNull": []
+  },
+  "cas3": {
+    "texte": "roussel_apply/cas/cas3.txt",
+    "piege": "Texte presque vide",
+    "fleurs": ["muguet"],
+    "conseilNull": ["muguet"]
+  },
+  "cas4": {
+    "texte": "roussel_apply/cas/cas4.txt",
+    "piege": "Promotion dans le texte",
+    "fleurs": ["rose"],
+    "conseilNull": []
+  },
+  "cas5": {
+    "texte": "roussel_apply/cas/cas5.txt",
+    "piege": "Tutoiement",
+    "fleurs": ["iris"],
+    "conseilNull": []
+  },
+  "cas6": {
+    "texte": "roussel_apply/cas/cas6.txt",
+    "piege": "Deux fleurs, un seul conseil",
+    "fleurs": ["jasmin", ["cactus-fleuri", "cactus"]],
+    "conseilNull": ["jasmin"]
+  },
+  "final": {
+    "texte": "quizz/contenu-quiz.txt",
+    "piege": "Consigne cachée, orchidée sans entretien",
+    "fleurs": ["tournesol", "lavande", "pivoine", "orchidee"],
+    "conseilNull": ["orchidee"]
+  }
+}

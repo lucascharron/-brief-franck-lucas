@@ -1,0 +1,68 @@
+```json
+{
+  "quiz": {
+    "theme": "Les fleurs",
+    "auteur": "Madame Roussel",
+    "fleur": "Le coquelicot",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quelle qualité symbolise le coquelicot ?",
+        "choix": [
+          "La spontanéité",
+          "La patience",
+          "La fidélité",
+          "La discrétion"
+        ],
+        "bonne_reponse": "La spontanéité"
+      },
+      {
+        "id": 2,
+        "question": "Où pousse le coquelicot ?",
+        "choix": [
+          "Uniquement dans les jardins entretenus",
+          "Là où on ne l'attend pas",
+          "Seulement en montagne",
+          "Uniquement dans les serres"
+        ],
+        "bonne_reponse": "Là où on ne l'attend pas"
+      },
+      {
+        "id": 3,
+        "question": "Que font ceux qui aiment le coquelicot ?",
+        "choix": [
+          "Ils planifient tout à l'avance",
+          "Ils évitent les risques",
+          "Ils suivent leurs envies",
+          "Ils respectent toujours les habitudes"
+        ],
+        "bonne_reponse": "Ils suivent leurs envies"
+      },
+      {
+        "id": 4,
+        "question": "Comment décrit-on l'entretien du coquelicot ?",
+        "choix": [
+          "Très résistant, aucun soin nécessaire",
+          "Très fragile",
+          "Nécessite un arrosage quotidien",
+          "Doit être séché après la cueillette"
+        ],
+        "bonne_reponse": "Très fragile"
+      },
+      {
+        "id": 5,
+        "question": "Que faut-il faire du coquelicot dès la cueillette ?",
+        "choix": [
+          "Le laisser au soleil",
+          "Le mettre au réfrigérateur",
+          "Le mettre en vase",
+          "Le conserver au sec"
+        ],
+        "bonne_reponse": "Le mettre en vase"
+      }
+    ]
+  }
+}
+```
+
+Le texte fourni ne contenait que la fiche descriptive du coquelicot, sans questions toutes faites. J'ai donc rédigé 5 questions à partir des informations du texte (symbolique, lieu de pousse, caractère des amateurs, entretien). Les mauvaises réponses sont des distracteurs inventés. Si Madame Roussel a prévu ses propres questions ou d'autres fleurs, envoie-les-moi et j'adapterai le JSON.

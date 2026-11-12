@@ -1,0 +1,69 @@
+```javascript
+/**
+ * Affiche le portrait de la fleur gagnante puis le décompte des réponses.
+ * @param {Object} profile - Portrait de la fleur gagnante (issu de data/donnees.json).
+ * @param {Object} counts - Associe l'id d'une fleur à son nombre de réponses.
+ */
+function afficherResultat(profile, counts) {
+  const conteneur = document.querySelector('#result-container');
+  if (!conteneur || !profile) return;
+
+  conteneur.replaceChildren();
+
+  // Portrait de la fleur gagnante
+  const portrait = document.createElement('article');
+  portrait.className = 'rounded-lg p-4 mb-6';
+
+  const nom = document.createElement('h2');
+  nom.className = 'text-2xl font-bold';
+  nom.textContent = profile.nom;
+  portrait.appendChild(nom);
+
+  if (profile.titre) {
+    const titre = document.createElement('p');
+    titre.className = 'text-lg italic';
+    titre.textContent = profile.titre;
+    portrait.appendChild(titre);
+  }
+
+  if (profile.description) {
+    const description = document.createElement('p');
+    description.className = 'mt-2';
+    description.textContent = profile.description;
+    portrait.appendChild(description);
+  }
+
+  // Le conseil n'est affiché que s'il est présent (jamais « null »)
+  if (profile.conseil) {
+    const conseil = document.createElement('p');
+    conseil.className = 'mt-2';
+    const libelle = document.createElement('strong');
+    libelle.textContent = 'Conseil : ';
+    conseil.appendChild(libelle);
+    conseil.appendChild(document.createTextNode(profile.conseil));
+    portrait.appendChild(conseil);
+  }
+
+  conteneur.appendChild(portrait);
+
+  // Nombre de réponses obtenues par chaque fleur
+  const section = document.createElement('section');
+  const sousTitre = document.createElement('h3');
+  sousTitre.className = 'text-xl font-semibold mb-2';
+  sousTitre.textContent = 'Vos réponses';
+  section.appendChild(sousTitre);
+
+  const liste = document.createElement('ul');
+  liste.className = 'space-y-1';
+
+  portraits.forEach((fleur) => {
+    const nombre = Number((counts && counts[fleur.id]) || 0);
+    const item = document.createElement('li');
+    item.textContent = fleur.nom + ' : ' + nombre;
+    liste.appendChild(item);
+  });
+
+  section.appendChild(liste);
+  conteneur.appendChild(section);
+}
+```

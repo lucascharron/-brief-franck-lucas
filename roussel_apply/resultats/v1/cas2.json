@@ -1,0 +1,45 @@
+```json
+{
+  "quiz": "Les fleurs - La marguerite (daisy)",
+  "auteur": "Madame Roussel",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the daisy symbolize?",
+      "choix": [
+        "A. Passion and desire",
+        "B. Innocence and simplicity",
+        "C. Wealth and power",
+        "D. Mystery and secrecy"
+      ],
+      "bonne_reponse": "B"
+    },
+    {
+      "id": 2,
+      "question": "According to the text, what are people who love daisies like?",
+      "choix": [
+        "A. Honest and cheerful",
+        "B. Shy and reserved",
+        "C. Ambitious and competitive",
+        "D. Calm and mysterious"
+      ],
+      "bonne_reponse": "A"
+    },
+    {
+      "id": 3,
+      "question": "How often should you change the water of daisies?",
+      "choix": [
+        "A. Every day",
+        "B. Every two days",
+        "C. Once a week",
+        "D. Once a month"
+      ],
+      "bonne_reponse": "B"
+    }
+  ]
+}
+```
+
+Remarques :
+- Le texte source ne contient que les bonnes réponses. Les mauvaises réponses (distracteurs) ont été inventées par mes soins, à vérifier par Madame Roussel.
+- Les questions sont en anglais pour rester cohérentes avec le texte d'origine. Je peux les traduire en français si vous préférez.

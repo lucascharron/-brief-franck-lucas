@@ -1,0 +1,10 @@
+[
+  {
+    "id": "rose",
+    "nom": "Rose",
+    "titre": "La reine des fleurs",
+    "description": "La rose symbolise l'amour et la passion. Si vous la choisissez, vous choisissez la reine des fleurs.",
+    "conseil": "Vous devez recouper les tiges tous les deux jours.",
+    "a_verifier": []
+  }
+]

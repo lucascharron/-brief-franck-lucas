@@ -1,0 +1,56 @@
+```javascript
+function afficherResultat(profile, counts) {
+  const container = document.getElementById('result-container');
+  if (!container) return;
+
+  // Petit utilitaire : crée un élément avec du texte (textContent évite toute injection HTML)
+  const el = (tag, text, className) => {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+
+  container.replaceChildren();
+
+  // Portrait de la fleur gagnante
+  const portrait = el('article', undefined, 'portrait');
+  portrait.append(
+    el('h2', profile.nom),
+    el('h3', profile.titre),
+    el('p', profile.description)
+  );
+
+  // Le conseil peut être null (ex. : orchidée) : on ne l'affiche que s'il existe
+  if (profile.conseil) {
+    const conseil = el('p', undefined, 'conseil');
+    conseil.append(el('strong', "Conseil d'entretien : "), document.createTextNode(profile.conseil));
+    portrait.append(conseil);
+  }
+
+  // Décompte des réponses pour chaque fleur
+  const decompte = el('section', undefined, 'decompte');
+  decompte.append(el('h3', 'Vos réponses'));
+
+  const liste = el('ul');
+  const fleurs = Array.isArray(portraits) ? portraits : [];
+  fleurs.forEach((fleur) => {
+    const n = Number((counts && counts[fleur.id]) || 0);
+    const li = el('li', `${fleur.nom} : ${n} réponse${n > 1 ? 's' : ''}`);
+    if (fleur.id === profile.id) li.classList.add('gagnante');
+    liste.append(li);
+  });
+  decompte.append(liste);
+
+  container.append(portrait, decompte);
+}
+```
+
+Points à noter :
+- **`conseil` nul** : l'orchidée a `conseil: null`, le bloc est donc omis plutôt que d'afficher « null ».
+- **Fleurs sans réponse** : la liste est construite à partir de `portraits`, donc une fleur absente de `counts` s'affiche avec 0.
+- **Sécurité** : tout passe par `textContent`, pas `innerHTML`.
+- **Pluriel** : « 0 réponse », « 1 réponse », « 2 réponses ».
+- La fleur gagnante reçoit la classe `gagnante` dans la liste, pour la styliser si besoin.
+
+Le champ `a_verifier` n'est pas utilisé, car il est vide pour toutes les fleurs et ne fait pas partie de ce qui était demandé.

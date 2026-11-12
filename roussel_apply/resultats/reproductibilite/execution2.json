@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tournesol",
+    "nom": "Tournesol",
+    "titre": "Symbole de joie et de chaleur",
+    "description": "Le tournesol est un symbole de joie et de chaleur, il suit le soleil. Si vous l'aimez, vous avez un tempérament optimiste et vous entraînez les autres dans votre bonne humeur.",
+    "conseil": "Offrez-lui beaucoup de lumière et de l'eau fraîche chaque jour dans le vase.",
+    "a_verifier": []
+  },
+  {
+    "id": "lavande",
+    "nom": "Lavande",
+    "titre": "Le calme et la douceur",
+    "description": "La lavande évoque le calme et la douceur des étés provençaux. Si vous l'aimez, vous aimez prendre votre temps et savourer les petits moments.",
+    "conseil": "Conservez-la en bouquet sec, la tête en bas.",
+    "a_verifier": []
+  },
+  {
+    "id": "pivoine",
+    "nom": "Pivoine",
+    "titre": "La fleur des grandes tablées",
+    "description": "Généreuse et pleine de vie, la pivoine symbolise la prospérité et le bonheur partagé. Si vous la choisissez, vous choisissez la fleur des grandes tablées.",
+    "conseil": "Coupez les tiges en biseau et changez l'eau souvent.",
+    "a_verifier": []
+  },
+  {
+    "id": "orchidee",
+    "nom": "Orchidée",
+    "titre": "Raffinée et mystérieuse",
+    "description": "Raffinée et mystérieuse, l'orchidée symbolise l'élégance. Si vous l'admirez, vous avez le goût du détail et des belles choses.",
+    "conseil": null,
+    "a_verifier": []
+  }
+]

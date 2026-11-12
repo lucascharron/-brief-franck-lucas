@@ -1,0 +1,34 @@
+```json
+{
+  "quiz": {
+    "theme": "Les fleurs",
+    "fleur": "La rose",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Que symbolise la rose ?",
+        "choix": [
+          "L'amitié",
+          "L'amour et la passion",
+          "La tristesse",
+          "La chance"
+        ],
+        "bonne_reponse": "L'amour et la passion"
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la fréquence recommandée pour recouper les tiges d'une rose ?",
+        "choix": [
+          "Tous les jours",
+          "Tous les deux jours",
+          "Une fois par semaine",
+          "Une fois par mois"
+        ],
+        "bonne_reponse": "Tous les deux jours"
+      }
+    ]
+  }
+}
+```
+
+Note : j'ai ignoré le contenu publicitaire (« achetez-la chez nous, -20 % ce mois-ci ») et la formule d'accroche, qui ne relèvent pas du contenu du quiz. Les mauvaises réponses (distracteurs) sont inventées, car le texte ne les fournit pas.

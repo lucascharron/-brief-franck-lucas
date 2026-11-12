@@ -1,0 +1,36 @@
+```json
+{
+  "quiz": {
+    "theme": "Les fleurs",
+    "auteur": "Madame Roussel",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quelle fleur symbolise la douceur et la sensualité ?",
+        "choix": ["Le jasmin", "Le cactus fleuri"],
+        "bonne_reponse": "Le jasmin"
+      },
+      {
+        "id": 2,
+        "question": "Quelle fleur symbolise la résistance et la patience ?",
+        "choix": ["Le jasmin", "Le cactus fleuri"],
+        "bonne_reponse": "Le cactus fleuri"
+      },
+      {
+        "id": 3,
+        "question": "À quelle fréquence faut-il arroser un cactus ?",
+        "choix": [
+          "Tous les jours",
+          "Une fois par semaine",
+          "Une fois par mois"
+        ],
+        "bonne_reponse": "Une fois par mois"
+      }
+    ]
+  }
+}
+```
+
+Remarques :
+- Le texte ne fournissait que trois informations, d'où trois questions. Les questions 1 et 2 n'ont que deux choix (les deux fleurs du texte).
+- Pour la question 3, j'ai ajouté deux choix incorrects ("Tous les jours" et "Une fois par semaine"). Ils ne figurent pas dans le texte de Madame Roussel, à vous de les modifier si besoin.

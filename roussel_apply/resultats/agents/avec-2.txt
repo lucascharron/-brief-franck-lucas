@@ -1,0 +1,68 @@
+```js
+// Affiche le portrait de la fleur gagnante puis le décompte des réponses.
+function afficherResultat(profile, counts) {
+  const conteneur = document.querySelector('#result-container');
+  if (!conteneur || !profile) return;
+
+  // Vide le conteneur avant un nouvel affichage
+  conteneur.replaceChildren();
+
+  // Portrait de la fleur gagnante
+  const portrait = document.createElement('article');
+  portrait.className = 'rounded-lg p-4 mb-6';
+
+  if (profile.nom) {
+    const nom = document.createElement('h2');
+    nom.className = 'text-2xl font-bold';
+    nom.textContent = profile.nom;
+    portrait.appendChild(nom);
+  }
+
+  if (profile.titre) {
+    const titre = document.createElement('p');
+    titre.className = 'text-lg italic mb-2';
+    titre.textContent = profile.titre;
+    portrait.appendChild(titre);
+  }
+
+  if (profile.description) {
+    const description = document.createElement('p');
+    description.className = 'mb-2';
+    description.textContent = profile.description;
+    portrait.appendChild(description);
+  }
+
+  // Le conseil n'est affiché que s'il existe (jamais « Conseil : null »)
+  if (profile.conseil) {
+    const conseil = document.createElement('p');
+    const etiquette = document.createElement('strong');
+    etiquette.textContent = 'Conseil d\u2019entretien : ';
+    conseil.appendChild(etiquette);
+    conseil.appendChild(document.createTextNode(profile.conseil));
+    portrait.appendChild(conseil);
+  }
+
+  conteneur.appendChild(portrait);
+
+  // Nombre de réponses obtenues par chaque fleur
+  const section = document.createElement('section');
+  const titreSection = document.createElement('h3');
+  titreSection.className = 'text-xl font-semibold mb-2';
+  titreSection.textContent = 'Vos réponses par fleur';
+  section.appendChild(titreSection);
+
+  const liste = document.createElement('ul');
+  liste.className = 'list-none p-0';
+
+  portraits.forEach((fleur) => {
+    const total = Number(counts && counts[fleur.id]) || 0;
+    const ligne = document.createElement('li');
+    ligne.textContent =
+      fleur.nom + ' : ' + total + (total > 1 ? ' réponses' : ' réponse');
+    liste.appendChild(ligne);
+  });
+
+  section.appendChild(liste);
+  conteneur.appendChild(section);
+}
+```

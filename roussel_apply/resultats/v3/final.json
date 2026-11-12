@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tournesol",
+    "nom": "Tournesol",
+    "titre": "Symbole de joie et de chaleur",
+    "description": "Vous êtes optimiste et vous entraînez les autres dans votre bonne humeur. Comme le tournesol qui suit le soleil, vous incarnez la joie et la chaleur.",
+    "conseil": "Offrez-lui beaucoup de lumière et de l'eau fraîche chaque jour dans le vase.",
+    "a_verifier": []
+  },
+  {
+    "id": "lavande",
+    "nom": "Lavande",
+    "titre": "Le calme et la douceur",
+    "description": "Vous aimez prendre votre temps et savourer les petits moments. Vous évoquez le calme et la douceur des étés provençaux.",
+    "conseil": "Conservez-la en bouquet sec, la tête en bas.",
+    "a_verifier": []
+  },
+  {
+    "id": "pivoine",
+    "nom": "Pivoine",
+    "titre": "Généreuse et pleine de vie",
+    "description": "Vous êtes généreux et plein de vie, comme la fleur des grandes tablées. Vous symbolisez la prospérité et le bonheur partagé.",
+    "conseil": "Coupez les tiges en biseau et changez l'eau souvent.",
+    "a_verifier": []
+  },
+  {
+    "id": "orchidee",
+    "nom": "Orchidée",
+    "titre": "Raffinée et mystérieuse",
+    "description": "Vous avez le goût du détail et des belles choses. Raffiné et mystérieux, vous symbolisez l'élégance.",
+    "conseil": null,
+    "a_verifier": []
+  }
+]

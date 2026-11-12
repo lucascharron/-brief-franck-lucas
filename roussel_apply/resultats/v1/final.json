@@ -1,0 +1,95 @@
+```json
+{
+  "quiz": {
+    "titre": "Quelle fleur vous ressemble ?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Quelle fleur est un symbole de joie et de chaleur, et suit le soleil ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "Le tournesol"
+      },
+      {
+        "id": 2,
+        "question": "Quelle fleur évoque le calme et la douceur des étés provençaux ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "La lavande"
+      },
+      {
+        "id": 3,
+        "question": "Quelle fleur, généreuse et pleine de vie, est la fleur des grandes tablées et symbolise la prospérité et le bonheur partagé ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "La pivoine"
+      },
+      {
+        "id": 4,
+        "question": "Quelle fleur, raffinée et mystérieuse, symbolise l'élégance ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "L'orchidée"
+      },
+      {
+        "id": 5,
+        "question": "Vous êtes optimiste et vous entraînez les autres dans votre bonne humeur : quelle fleur aimez-vous ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "Le tournesol"
+      },
+      {
+        "id": 6,
+        "question": "Vous aimez prendre votre temps et savourer les petits moments : quelle fleur aimez-vous ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "La lavande"
+      },
+      {
+        "id": 7,
+        "question": "Vous avez le goût du détail et des belles choses : quelle fleur admirez-vous ?",
+        "choix": ["Le tournesol", "La lavande", "La pivoine", "L'orchidée"],
+        "bonne_reponse": "L'orchidée"
+      },
+      {
+        "id": 8,
+        "question": "Comment entretenir un tournesol ?",
+        "choix": [
+          "Beaucoup de lumière, et de l'eau fraîche chaque jour dans le vase",
+          "La suspendre la tête en bas pour la faire sécher",
+          "Couper les tiges en biseau et changer l'eau souvent",
+          "La placer à l'ombre sans eau"
+        ],
+        "bonne_reponse": "Beaucoup de lumière, et de l'eau fraîche chaque jour dans le vase"
+      },
+      {
+        "id": 9,
+        "question": "Comment conserver la lavande ?",
+        "choix": [
+          "Beaucoup de lumière, et de l'eau fraîche chaque jour dans le vase",
+          "En bouquet sec, la tête en bas",
+          "Couper les tiges en biseau et changer l'eau souvent",
+          "Dans un vase rempli d'eau chaude"
+        ],
+        "bonne_reponse": "En bouquet sec, la tête en bas"
+      },
+      {
+        "id": 10,
+        "question": "Comment entretenir une pivoine ?",
+        "choix": [
+          "Beaucoup de lumière, et de l'eau fraîche chaque jour dans le vase",
+          "La conserver en bouquet sec, la tête en bas",
+          "Couper les tiges en biseau et changer l'eau souvent",
+          "Ne jamais changer l'eau du vase"
+        ],
+        "bonne_reponse": "Couper les tiges en biseau et changer l'eau souvent"
+      }
+    ],
+    "resultats": {
+      "tournesol": "Le tournesol, symbole de joie et de chaleur, suit le soleil. Vous qui l'aimez, vous êtes optimiste et vous entraînez les autres dans votre bonne humeur. Entretien : beaucoup de lumière, et de l'eau fraîche chaque jour dans le vase.",
+      "lavande": "La lavande évoque le calme et la douceur des étés provençaux. Vous aimez prendre votre temps et savourer les petits moments. Entretien : elle se conserve très bien en bouquet sec, la tête en bas.",
+      "pivoine": "La pivoine, généreuse et pleine de vie, est la fleur des grandes tablées. Elle symbolise la prospérité et le bonheur partagé. Entretien : coupez les tiges en biseau et changez l'eau souvent.",
+      "orchidee": "L'orchidée, raffinée et mystérieuse, symbolise l'élégance. Vous avez le goût du détail et des belles choses."
+    }
+  }
+}
+```
+
+Quelques remarques :
+- Le texte du blog ne contient pas de questions toutes faites : je les ai construites à partir des descriptions, sans rien ajouter au sens. Les mauvaises réponses des questions d'entretien (8 à 10) sont inventées pour servir de choix.
+- Pour l'orchidée, le blog ne donne aucun conseil d'entretien, donc je n'en ai pas inventé.
+- Les textes destinés aux clients sont vouvoyés.

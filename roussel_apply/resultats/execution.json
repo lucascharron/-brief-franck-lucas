@@ -1,0 +1,75 @@
+[
+  {
+    "date": "2026-11-12T10:05:52.537Z",
+    "outil": "Claude Code CLI (claude -p), conversation neuve par exécution, sans outils ni mémoire",
+    "modeles": [
+      "claude-haiku-5-5",
+      "claude-sonnet-5-5"
+    ]
+  },
+  {
+    "date": "2026-11-12T10:07:53.437Z",
+    "versions": [
+      "v4"
+    ],
+    "cas": [
+      "cas1",
+      "cas2",
+      "cas3",
+      "cas4",
+      "cas5",
+      "cas6",
+      "final"
+    ],
+    "outil": "Claude Code CLI (claude -p), conversation neuve par exécution, sans outils ni mémoire",
+    "modeles": [
+      "claude-sonnet-5-5",
+      "claude-haiku-5-5"
+    ]
+  },
+  {
+    "date": "2026-11-12T10:09:02.616Z",
+    "versions": [
+      "v5"
+    ],
+    "cas": [
+      "cas1",
+      "cas2",
+      "cas3",
+      "cas4",
+      "cas5",
+      "cas6",
+      "final"
+    ],
+    "outil": "Claude Code CLI (claude -p), conversation neuve par exécution, sans outils ni mémoire",
+    "modeles": [
+      "claude-sonnet-5-5"
+    ]
+  },
+  {
+    "date": "2026-11-12T10:09:28.266Z",
+    "versions": [
+      "v5"
+    ],
+    "cas": [
+      "final"
+    ],
+    "outil": "Claude Code CLI (claude -p), conversation neuve par exécution, sans outils ni mémoire",
+    "modeles": [
+      "claude-sonnet-5-5"
+    ]
+  },
+  {
+    "date": "2026-11-12T10:09:35.968Z",
+    "versions": [
+      "v5"
+    ],
+    "cas": [
+      "final"
+    ],
+    "outil": "Claude Code CLI (claude -p), conversation neuve par exécution, sans outils ni mémoire",
+    "modeles": [
+      "claude-sonnet-5-5"
+    ]
+  }
+]

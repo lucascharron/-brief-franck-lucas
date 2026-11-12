@@ -1,0 +1,5 @@
+[{"id":"marguerite","nom":"Marguerite","titre":"Innocence et simplicité","description":"La marguerite symbolise l'innocence et la simplicité. Ceux qui l'aiment sont honnêtes et joyeux : vous avez ainsi un tempérament franc et gai.","conseil":"Changez l'eau tous les deux jours.","a_verifier":[]}]
+
+Hmm, wait — let me correct that: the description must avoid inventing ideas and avoid adjective agreement to the reader. Here is the corrected output:
+
+[{"id":"marguerite","nom":"Marguerite","titre":"Innocence et simplicité","description":"La marguerite symbolise l'innocence et la simplicité. Si vous l'aimez, vous avez un tempérament honnête et joyeux.","conseil":"Changez l'eau tous les deux jours.","a_verifier":[]}]
