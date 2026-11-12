@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         const [qRes, pRes] = await Promise.all([
-            fetch("data/questions.json"),
+            fetch("data/question.json"),
             fetch("data/portraits.json")
         ]);
 
